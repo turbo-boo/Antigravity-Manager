@@ -38,6 +38,7 @@ pub fn transform_openai_request(
             mapped_model_lower.contains("-thinking")
                 || mapped_model_lower.contains("gemini-2.0-pro")
                 || mapped_model_lower.contains("gemini-3-pro")
+                || mapped_model_lower.contains("gemini-3-flash")
         )
         && !mapped_model_lower.contains("claude");
     let is_claude_thinking = mapped_model_lower.ends_with("-thinking");
